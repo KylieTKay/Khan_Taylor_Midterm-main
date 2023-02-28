@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Quatro - contact page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" media="screen">
+</head>
+
+<!-- 
+Build Protype and scaffold for midterm Project:
+
+2 wireframes (mock flow)
+2 boxed XD files
+2 statice Site HTML / CSS
+1 text file with box info 
+[one for both mobile (320px) and desktop (1920px)] 
+-->
+
+<body>
+    <h1 class="hidden">contact page</h1>
+    <div class="container">
+    <!-- header -->
+    <header>
+        <section class="headerCon grid">
+            <h1 class="hidden">"main header"</h1>
+            <a href="index.html"><img id="logo" src="https://placeholder.pics/svg/270x95/000000/FFFFFF-000000/logo" alt="Quatro logo" ></a>
+            <nav class="mainNav">
+                <menu id="burger-con">
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="*">menu2</a></li>
+                    <li><a href="*">menu3</a></li>
+                    <li><a href="*">menu4</a></li>
+                    <li><a href="*">menu5</a></li>
+                </menu>
+            </nav>
+        </section> 
+    </header>
+    <!-- main -->
+    <main>
+        <!-- hero -->
+        <section class="mainHero">
+            <div class="heroOverlay grid">
+                <div class="contactHeroText">
+                    <h1>About Quatro</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque harum quo.</p>
+                </div>
+            </div>
+        </section>
+        <!-- mission -->
+        <section class="secCon grid" id="missionCon">
+            <div class="secText" id="missionText">
+                <h3>Our Mission</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repudiandae obcaecati incidunt tenetur illo consequatur quidem.
+            </p>
+            </div>
+            <img src="https://placeholder.pics/svg/500X415/97CE88/FFFFFF-97CE88/mission%20img" alt="" class="secImg" id="missionImg">
+        </section>
+        <!-- QnA -->
+        <section class="secCon grid" id="QnACon">
+            <div id="QnAText">
+                <h2>Common Questions</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="QnARow whitebumper">
+                <div class="query">
+                    <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                    <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+                <div class="viewQuery"><a href="*">View</a></div>
+            </div>
+            <div class="QnARow whitebumper">
+                <div class="query">
+                    <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                    <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+                <div class="viewQuery"><a href="*">View</a></div>
+            </div>
+            <div class="QnARow whitebumper">
+                <div class="query">
+                    <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                    <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+                <div class="viewQuery"><a href="*">View</a></div>
+            </div>
+            <div class="QnARow whitebumper">
+                <div class="query">
+                    <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                    <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+                <div class="viewQuery"><a href="*">View</a></div>
+            </div>
+            <div class="QnARow whitebumper">
+                <div class="query">
+                    <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                    <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+                <div class="viewQuery"><a href="*">View</a></div>
+            </div>
+            <div class="QnARow whitebumper">
+                <div class="query">
+                    <p class="Q">Q: Lorem ipsum dolor sit amet, consectetur adipisicing elit?</p>
+                    <p>A: Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+                <div class="viewQuery"><a href="*">View</a></div>
+            </div>
+        </section>
+        <section class="secCon" id="formCon">
+            <div id="formbackground">
+                <div id="contactForm">
+                    <ul>
+                        <h2>Get In Touch</h2>
+                        
+                        <li>
+                            <p><i class="fa-solid fa-location-dot"></i>&emsp;123 Mockup St., Somewhere</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-mobile-alt"></i>&emsp;<a href="tel:1-XXX-XXX-XXXX">+1 XXX-XXX-XXXX</a></p>
+                        </li>
+                        <li> 
+                            <p><i class="fa-solid fa-envelope"></i>&emsp;<a href="info[at]quatro.com
+                            ">info&#64;quatro.com</a></p>
+                        </li>
+                    </ul>
+                    <form action="">
+                        <input id="nameInput" type="text" name="name" placeholder="Name">
+
+                        <input id="emailInput" type="text" name="email" placeholder="Email">
+
+                        <textarea type="text" name="inquiries" placeholder="Write your message here"></textarea>
+                        
+                        <input id="submitInput" type="submit" value="Send">
+                    </form>
+                </div>
+                <img src="https://placeholder.pics/svg/470x565/97CE88/FFFFFF-97CE88/mission%20img" alt="" class="secImg" id="formImg">
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <section class="contactfooterBanner">
+            <h2 class="hidden">footer</h2>
+            <div class="subscribe">
+                <h2>SUBSCRIBE</h2>
+                <p>Keep up with Quatro&trade; and sign-up for our newsletter!</p>
+                <form action="">
+                    <input type="text" name="email"
+                    placeholder="Email">
+                    <button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                </form>  
+            </div>
+            <div class="footerCon">
+                <p id="copyrights">
+                    Copyright &copy 2023 Quatro&trade; All Rights Reserved
+                </p>
+                <div id="socials">
+                    <ul>
+                        <li><p><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></p></li>
+                        <li><p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></p></li>
+                        <li><p><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa-brands fa-twitter"></i></a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
