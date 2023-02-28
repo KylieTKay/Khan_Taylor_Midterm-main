@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet" media="screen">
+    <link href="css/mobile-main.css" rel="stylesheet" media="screen">
 </head>
 
 <!-- 
@@ -29,10 +29,17 @@ Build Protype and scaffold for midterm Project:
     <header>
         <section class="headerCon grid">
             <h1 class="hidden">"main header"</h1>
-            <img id="logo" src="https://placeholder.pics/svg/270x95/000000/FFFFFF-000000/logo" alt="Quatro logo" >
+            <img id="logo" src="https://via.placeholder.com/130x95/838383/efefef" alt="Quatro logo" >
             <nav class="mainNav">
-                <menu id="burger-con">
-                    <li><a href="contact.html">contact</a></li>
+                <!-- HIDDEN MENU FOR MOBILE SCREENS -->
+                <h2 class="hidden">Main Navigation</h2>
+                <input type="checkbox" id="hamburger">
+                <label for="hamburger">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </label>
+                <!-- !!! -->
+                <menu  id="burger-con">
+                    <li><a href="mobile-contact.html">contact</a></li>
                     <li><a href="*">menu2</a></li>
                     <li><a href="*">menu3</a></li>
                     <li><a href="*">menu4</a></li>
@@ -46,7 +53,7 @@ Build Protype and scaffold for midterm Project:
         <!-- hero -->
         <section class="mainHero">
             <div class="heroOverlay BGI grid">
-                <img src="https://placeholder.pics/svg/270x673/FFFFFF/000000-FDFFCC/Hero%20Svg" alt="" class="heroOverImg">
+                <img src="https://placeholder.pics/svg/160x423/FFFFFF/000000-FFFFFF/Hero%20Svg" alt="" class="heroOverImg">
                 <h1 class="heroText">[Quatro Slogan:<br>Here]</h1>
             </div>
         </section>
@@ -57,17 +64,20 @@ Build Protype and scaffold for midterm Project:
                 <div class="adQuote">
                     <h2>[Tag-line or Quote<br>Here]</h2>
                 </div>
-                <img src="https://placeholder.pics/svg/970x706/FFFFFF/000000-FFFFFF/commercial%20here" alt="" class="commercial">
             </section>
+            <img src="https://placeholder.pics/svg/320x415/FFFFFF/000000-FFFFFF/commercial%20here" alt="" class="commercial">
             <!-- info -->
-            <section class="quatroInfoCon grid">
-                <img src="https://placeholder.pics/svg/400x578/FFFFFF/000000-FFFFFF/info%20svg" alt="" class="infoImg">
-                <div class="infoText">
+            <section class="quatroInfoCon">
+                
+                <div class="infoText grid">
                     <h2>Quatro Original</h2>
-                    <h3>Bringing Back an Old Favourite</h3>
+                    <h3>Bringing Back an Old Favourite</h3>  
+                </div>
+                <div class="infoImg">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, odio vitae dolor delectus vel labore?<br>
                     Itaque fugit perferendis necessitatibus nobis recusandae dolorem sint repellendus nulla delectus sunt! Facilis, nihil iure.</p>
                 </div>
+                
             </section>
             <!-- flavour -->
             <section class="flavCon">
@@ -75,24 +85,22 @@ Build Protype and scaffold for midterm Project:
                     <h2>Now With 4 New Flavours!</h2>
                 </div>
                 <section class="leftHang grid" id="uno">
-                    <img src="https://placeholder.pics/svg/206X276/FD8A8A/FFFFFF-FD8A8A/can%20svg" alt="" class="flavCanLt" id="canUno">
+                    <img src="https://placeholder.pics/svg/160X176/FD8A8A/FFFFFF-FD8A8A/can%20svg" alt="" class="flavCanLt" id="canUno">
                     <p class="flavTextLt flavText">UNO</p>
                 </section>
                 <section class="rightHang grid" id="dos">
                     <p class="flavTextRt flavText">DOS</p>
-                    <img src="https://placeholder.pics/svg/206X276/FFED65/FFFFFF-FFED65/can%20svg" alt="" class="flavCanRt" id="canDos">
+                    <img src="https://placeholder.pics/svg/160X176/FFED65/FFFFFF-FFED65/can%20svg" alt="" class="flavCanRt" id="canDos">
                 </section>
                 <section class="leftHang grid" id="tres">
-                    <img src="https://placeholder.pics/svg/206X276/F2AF50/FFFFFF-F2AF50/can%20svg" alt="" class="flavCanLt" id="canTres">
-                    <div class="flavInfoLt">
-                        <p class="flavTextLt flavText">TRES</p>
-                    </div>
+                    <img src="https://placeholder.pics/svg/160X176/F2AF50/FFFFFF-F2AF50/can%20svg" alt="" class="flavCanLt" id="canTres">
+                    <p class="flavTextLt flavText">TRES</p>
                 </section>
                 <section class="rightHang grid" id="lito">
                     <p class="flavTextRt" id="textLito">
                         <span1>QUATRO<span1><br><span2>LITO</span2>
                     </p>
-                    <img src="https://placeholder.pics/svg/206X276/97CE88/FFFFFF-97CE88/can%20svg" alt="" class="flavCanRt" id="canLito">
+                    <img src="https://placeholder.pics/svg/160X176/97CE88/FFFFFF-97CE88/can%20svg" alt="" class="flavCanRt" id="canLito">
                 </section>
             </section>
             <section class="sustainCon grid">
@@ -111,7 +119,7 @@ Build Protype and scaffold for midterm Project:
             <h2 class="hidden">footer</h2>
             <div class="footerCon">
                 <p id="copyrights">
-                    Copyright &copy 2023 Quatro&trade; All Rights Reserved
+                    Copyright &copy 2023 Quatro&trade;
                 </p>
                 <div id="socials">
                     <ul>
@@ -123,6 +131,6 @@ Build Protype and scaffold for midterm Project:
             </div>
         </section>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/mobile-main.js"></script>
 </body>
 </html>
